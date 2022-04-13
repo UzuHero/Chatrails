@@ -29,5 +29,4 @@ jobs:
         run: |
           gem install bundler
           yarn install
-      - name: Rubocop
-        run: bundle exec rubocop
+      
