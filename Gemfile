@@ -17,4 +17,12 @@ gem "draper", "~> 4.0"
 
 group :development, :test do
   gem "pry-rails"
+   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot'
+  gem 'pry'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
+  gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
 end

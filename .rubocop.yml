@@ -1,0 +1,27 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'spec/**/*'
+    - 'db/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
+    - 'config/*'
+    - 'db/*'
+
+Layout/LineLength:
+  Exclude:
+    - spec/**/*.rb
+
+Style/Documentation:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Max: 10
